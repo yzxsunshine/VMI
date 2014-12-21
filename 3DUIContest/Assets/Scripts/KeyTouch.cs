@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using CSharpSynth.Effects;
-using CSharpSynth.Sequencer;
-using CSharpSynth.Synthesis;
-using CSharpSynth.Midi;
 
 public enum PLAY_MODE {
 	SINGLE_NOTE,
@@ -28,7 +24,7 @@ public class KeyTouch : MonoBehaviour {
 	public Quaternion pressRotation;
 	private bool isPress = false;
 
-	private StreamSynthesizer midiStreamSynthesizer;
+	//private StreamSynthesizer midiStreamSynthesizer;
 	private static int midCNote;
 	private static int instrument;
 	private PLAY_MODE chordMode;
@@ -131,7 +127,7 @@ public class KeyTouch : MonoBehaviour {
 						offset = minorChordOffset[currentNode];
 						break;
 					}
-					midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + offset);
+					//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + offset);
 					currentNode++;
 					if(currentNode > 2) {
 						passTime = passTime - currentNode * deltaTime;
@@ -149,7 +145,7 @@ public class KeyTouch : MonoBehaviour {
 						offset = minorChordOffset[currentNode];
 						break;
 					}
-					midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + offset, noteVolume, instrument);
+					//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + offset, noteVolume, instrument);
 				}
 			}
 
@@ -200,11 +196,11 @@ public class KeyTouch : MonoBehaviour {
 		StopSound();
 		isPress = false;
 	}
-
+	/*
 	public void SetStreamTynthesizer(StreamSynthesizer ss) {
 		midiStreamSynthesizer = ss;
 	}
-
+*/
 	public static void SetMiddleCNode(int midC) {
 		midCNote = midC;
 	}
@@ -221,21 +217,21 @@ public class KeyTouch : MonoBehaviour {
 		isPlaySeq = false;
 		switch (chordMode) {
 		case PLAY_MODE.SINGLE_NOTE:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
 			break;
 		case PLAY_MODE.CHORD_MAJOR:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[0], noteVolume, instrument);
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[1], noteVolume, instrument);
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[2], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[0], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[1], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + majorChordOffset[2], noteVolume, instrument);
 			break;
 		case PLAY_MODE.CHORD_MINOR:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[0], noteVolume, instrument);
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[1], noteVolume, instrument);
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[2], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[0], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[1], noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC + minorChordOffset[2], noteVolume, instrument);
 			break;
 		case PLAY_MODE.SEQUENCE_MAJOR_1_2:
 		case PLAY_MODE.SEQUENCE_MINOR_1_2:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
 			deltaTime = 500;
 			passTime = 0;
 			currentNode = 0;
@@ -243,7 +239,7 @@ public class KeyTouch : MonoBehaviour {
 			break;
 		case PLAY_MODE.SEQUENCE_MAJOR_1_4:
 		case PLAY_MODE.SEQUENCE_MINOR_1_4:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
 			deltaTime = 250;
 			passTime = 0;
 			currentNode = 0;
@@ -251,7 +247,7 @@ public class KeyTouch : MonoBehaviour {
 			break;
 		case PLAY_MODE.SEQUENCE_MAJOR_1_8:
 		case PLAY_MODE.SEQUENCE_MINOR_1_8:
-			midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
+			//midiStreamSynthesizer.NoteOn (1, midCNote + distToMidC, noteVolume, instrument);
 			deltaTime = 125;
 			passTime = 0;
 			currentNode = 0;
@@ -263,29 +259,29 @@ public class KeyTouch : MonoBehaviour {
 	void StopSound() {
 		switch (chordMode) {
 		case PLAY_MODE.SINGLE_NOTE:
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
 			break;
 		case PLAY_MODE.CHORD_MAJOR:
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 4);
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 7);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 4);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 7);
 			break;
 		case PLAY_MODE.CHORD_MINOR:
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 3);
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 7);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 3);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + 7);
 			break;
 		case PLAY_MODE.SEQUENCE_MAJOR_1_2:
 		case PLAY_MODE.SEQUENCE_MAJOR_1_4:
 		case PLAY_MODE.SEQUENCE_MAJOR_1_8:
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + majorChordOffset[currentNode]);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + majorChordOffset[currentNode]);
 			passTime = 0;
 			currentNode = 0;
 			break;
 		case PLAY_MODE.SEQUENCE_MINOR_1_2:
 		case PLAY_MODE.SEQUENCE_MINOR_1_4:
 		case PLAY_MODE.SEQUENCE_MINOR_1_8:
-			midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + minorChordOffset[currentNode]);
+			//midiStreamSynthesizer.NoteOff (1, midCNote + distToMidC + minorChordOffset[currentNode]);
 			passTime = 0;
 			currentNode = 0;
 			break;

@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;ENABLE_DUCK_TYPING</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -46,22 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CreateScriptDialog\Editor\NewScriptGenerator.cs" />
-     <Compile Include="Assets\CreateScriptDialog\Editor\NewScriptWindow.cs" />
-     <Compile Include="Assets\CreateScriptDialog\Editor\ScriptPrescription.cs" />
      <Compile Include="Assets\ListBox\Editor\ListBoxExample.cs" />
      <None Include="Assets\Resources\Midis\carnival.mid.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\MonoBehaviour.cs.txt" />
      <None Include="Assets\Resources\GM Bank\FrenchHorns.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Marimba.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SynthDrum.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Applause.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Editor Window.cs.txt" />
      <None Include="Assets\Resources\GM Bank\Charang.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Tuba.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SlapBass2.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\gm.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Function Call From Menu.js.txt" />
      <None Include="Assets\Resources\GM Bank\TremoloStr.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Koto.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Kalimba.sfz.txt" />
@@ -76,12 +70,10 @@
      <None Include="Assets\Resources\GM Bank\Piano3.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\FingerBass.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\JazzGtr.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Wizard.cs.txt" />
      <None Include="Assets\Resources\GM Bank\OrchestraHit.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Electronic.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\MuteTrumpet.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\PickedBass.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Object.cs.txt" />
      <None Include="Assets\Resources\GM Bank\StarTheme.sfz.txt" />
      <None Include="Assets\Resources\Midis\FF6_Forever_Rachel.mid.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
@@ -89,7 +81,6 @@
      <None Include="Assets\Resources\GM Bank\Trombone.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Standard.sfz.txt" />
      <None Include="Assets\Resources\Midis\xmasmedl.mid.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Empty Class.boo.txt" />
      <None Include="Assets\Resources\GM Bank\TinkleBell.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\TenorSax.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\TR-808.sfz.txt" />
@@ -97,9 +88,7 @@
      <None Include="Assets\Resources\GM Bank\EchoDrops.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SlowStrings.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Glockenspiel.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\MonoBehaviour.functions.txt" />
      <None Include="Assets\Resources\GM Bank\Trumpet.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Custom Editor.cs.txt" />
      <None Include="Assets\Resources\GM Bank\Sitar.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Cello.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\NylonGtr.sfz.txt" />
@@ -110,12 +99,9 @@
      <None Include="Assets\Resources\GM Bank\GtFretNoise.sfz.txt" />
      <None Include="Assets\Resources\Midis\Band_on_the_Run.mid.txt" />
      <None Include="Assets\Resources\GM Bank\Timpani.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Asset Postprocessor.cs.txt" />
      <None Include="Assets\Resources\GM Bank\VoiceOohs.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Xylophone.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Empty Class.cs.txt" />
      <None Include="Assets\Resources\GM Bank\Brass1.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Custom Editor.js.txt" />
      <None Include="Assets\Resources\GM Bank\Goblin.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Shakuhachi.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Violin.sfz.txt" />
@@ -128,11 +114,9 @@
      <None Include="Assets\Resources\GM Bank\Gunshot.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Harmonica.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\MuteGtr.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\AssetPostprocessor.functions.txt" />
      <None Include="Assets\Resources\GM Bank\ChurchOrgan1.sfz.txt" />
      <None Include="Assets\Resources\Midis\N64ZeldaOcarinaEnding.mid.txt" />
      <None Include="Assets\Resources\Midis\z5hracermx2.mid.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Empty Class.js.txt" />
      <None Include="Assets\Resources\GM Bank\Piano2.sfz.txt" />
      <None Include="Assets\Resources\Midis\SuperMario64_-_DireDireDocksRemixXG.mid.txt" />
      <None Include="Assets\Resources\GM Bank\ChifferLead.sfz.txt" />
@@ -152,7 +136,6 @@
      <None Include="Assets\Resources\Midis\alad09.mid.txt" />
      <None Include="Assets\Resources\GM Bank\SynthBass1.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SynthVox.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Custom Editor.boo.txt" />
      <None Include="Assets\Resources\GM Bank\Atmosphere.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\AcousticBass.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\IceRain.sfz.txt" />
@@ -174,51 +157,36 @@
      <None Include="Assets\Resources\GM Bank\OverdriveGtr.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Crystal.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Clarinet.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\EditorWindow.functions.txt" />
      <None Include="Assets\Resources\Midis\DDRMAX2_ranking_SB_zb.mid.txt" />
      <None Include="Assets\Resources\GM Bank\Contrabass.sfz.txt" />
      <None Include="Assets\Resources\Analog Bank\analog.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\ScriptableWizard.functions.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Editor Window.boo.txt" />
      <None Include="Assets\Resources\GM Bank\Woodblock.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\ScriptableObject.functions.txt" />
      <None Include="Assets\Resources\GM Bank\Polysynth.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\WarmPad.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\HaloPad.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SawWave.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\BassLead.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Editor.functions.txt" />
      <None Include="Assets\Resources\GM Bank\SynthBass2.sfz.txt" />
      <None Include="Assets\Resources\Midis\WALTZFLR.MID.txt" />
      <None Include="Assets\Resources\GM Bank\Whistle.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\5thSawWave.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\MonoBehaviour.js.txt" />
      <None Include="Assets\Resources\GM Bank\SFX.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Wizard.boo.txt" />
      <None Include="Assets\Resources\GM Bank\ElectricPiano2.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\BaritoneSax.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Vibraphone.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Asset Postprocessor.boo.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Asset Postprocessor.js.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Wizard.js.txt" />
      <None Include="Assets\Resources\GM Bank\MeloTom1.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Object.js.txt" />
      <None Include="Assets\Resources\Midis\T_RaidenII_Stage1Theme.mid.txt" />
      <None Include="Assets\Resources\GM Bank\Oboe.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Function Call From Menu.cs.txt" />
      <None Include="Assets\Resources\GM Bank\Room.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SynthCalliope.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Brightness.sfz.txt" />
      <None Include="Assets\Resources\Midis\eternia.mid.txt" />
      <None Include="Assets\Resources\GM Bank\CleanGtr.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Shamisen.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\MonoBehaviour.boo.txt" />
      <None Include="Assets\Resources\GM Bank\Santur.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Scriptable Object.boo.txt" />
      <None Include="Assets\Resources\GM Bank\Bagpipe.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\BreathNoise.sfz.txt" />
      <None Include="Assets\Resources\Midis\cbfd_heist.mid.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Function Call From Menu.boo.txt" />
      <None Include="Assets\Resources\GM Bank\Bandoneon.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Harpsichord.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Agogo.sfz.txt" />
@@ -234,7 +202,6 @@
      <None Include="Assets\Resources\GM Bank\PanFlute.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Seashore.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\BottleBlow.sfz.txt" />
-     <None Include="Assets\CreateScriptDialog\SmartScriptTemplates\Editor Window.js.txt" />
      <None Include="Assets\Resources\GM Bank\DistortionGtr.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\SlapBass1.sfz.txt" />
      <None Include="Assets\Resources\GM Bank\Orchestra.sfz.txt" />
@@ -249,8 +216,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{8A9654FE-4D84-1208-4EC8-3BFA08925444}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{EFA80484-A06D-0FA4-3A1B-3FEEB1CCFF27}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>

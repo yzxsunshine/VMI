@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using CSharpSynth.Effects;
-using CSharpSynth.Sequencer;
-using CSharpSynth.Synthesis;
-using CSharpSynth.Midi;
 
 [RequireComponent (typeof(AudioSource))]
 public class KeyManage : MonoBehaviour {
@@ -20,8 +16,6 @@ public class KeyManage : MonoBehaviour {
 	private float[] sampleBuffer;
 	
 	private float gain = 1f;
-	private MidiSequencer midiSequencer;
-	private StreamSynthesizer midiStreamSynthesizer;
 	private float maxSliderValue = 255.0f;
 	
 	public GameObject keyboard = null;
@@ -38,9 +32,10 @@ public class KeyManage : MonoBehaviour {
 	private Rect[] sequenceRect;
 
 	private PLAY_MODE mode;
-
+	/*
 	void Awake ()
 	{
+
 		midiStreamSynthesizer = new StreamSynthesizer (44100, 2, bufferSize, 40);
 		sampleBuffer = new float[midiStreamSynthesizer.BufferSize];		
 		
@@ -66,6 +61,7 @@ public class KeyManage : MonoBehaviour {
 		//sequenceRect[3] = new Rect(Screen.width * 0.35f, Screen.height * 0.1f, Screen.width * 0.1f, Screen.height * 0.1f);
 		//sequenceRect[4] = new Rect(Screen.width * 0.4f, Screen.height * 0.1f, Screen.width * 0.1f, Screen.height * 0.1f);
 		//sequenceRect[5] = new Rect(Screen.width * 0.5f, Screen.height * 0.1f, Screen.width * 0.1f, Screen.height * 0.1f);
+
 	}
 	// Use this for initialization
 	void Start () {
@@ -282,5 +278,5 @@ public class KeyManage : MonoBehaviour {
 	{
 		Debug.Log ("NoteOff: " + note.ToString ());
 	}
-
+*/
 }
