@@ -49,7 +49,9 @@
      <Compile Include="Assets\Scripts\KeyManage.cs" />
      <Compile Include="Assets\Scripts\KeyTouch.cs" />
      <Compile Include="Assets\Scripts\PianoKeyPlay.cs" />
+     <Compile Include="Assets\Scripts\SceneControl.cs" />
      <Compile Include="Assets\Scripts\SensorFusion.cs" />
+     <Compile Include="Assets\Scripts\StarCtrl.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

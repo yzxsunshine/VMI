@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\KeyTouch.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="C:\Work\Paper_Project\3DUI\HIVE-FingerWalking\HIVE-FingerWalking\Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js">
     <Files>
-      <File FileName="Assets\Scripts\KeyManage.cs" Line="281" Column="3" />
-      <File FileName="Assets\Scripts\KeyTouch.cs" Line="276" Column="37" />
+      <File FileName="C:\Work\Paper_Project\3DUI\HIVE-FingerWalking\HIVE-FingerWalking\Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" Line="48" Column="7" />
+      <File FileName="C:\Work\Paper_Project\3DUI\HIVE-FingerWalking\HIVE-FingerWalking\Assets\Scripts\FingerWalkingGesture.cs" Line="93" Column="4" />
+      <File FileName="C:\Work\Paper_Project\3DUI\HIVE-FingerWalking\HIVE-FingerWalking\Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="369" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
