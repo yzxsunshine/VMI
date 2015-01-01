@@ -11,6 +11,7 @@ public class SceneControl : MonoBehaviour {
 	void Start () {
 		//senfu = new SensorFusion();
 		//senfu.Start();
+		StarCtrl.InitStatic();
 		CreateScenePanel();
 		CreateCtrlPanel();
 	}
@@ -24,17 +25,17 @@ public class SceneControl : MonoBehaviour {
 	{
 		//GUI.Label(new Rect(10, 10, 500, 20), senfu.Orientation.ToString());
 		// End the Groups and Area	
+		//GUI.Box(ctrlPanel, " ");
 		Event e = Event.current;
 		if (e.isKey)
 			Debug.Log("Detected key code: " + e.keyCode);	
-		DrawCtrlPanel();
 	}
 
 	void CreateCtrlPanel() {
 		float widthUnit = Screen.width * 1.0f / 16;
 		float heightUnit = Screen.height * 1.0f / 9;
 		ctrlPanel = new Rect(widthUnit * 11.5f, heightUnit * 0.5f, widthUnit * 4, heightUnit * 8);
-		Vector3 pos = new Vector3((ctrlPanel.x + 50) / Screen.width, (ctrlPanel.y + ctrlPanel.height - 50) / Screen.height, 0);
+		Vector3 pos = new Vector3((ctrlPanel.x + 50) / Screen.width, (ctrlPanel.y + ctrlPanel.height - 50) / Screen.height, 1);
 		GameObject star = Instantiate(Resources.Load("Prefab/starGUI", typeof(GameObject)), pos, Quaternion.identity) as GameObject;
 		star.guiTexture.pixelInset.Set(-25, -25, 50, 50);
 	}

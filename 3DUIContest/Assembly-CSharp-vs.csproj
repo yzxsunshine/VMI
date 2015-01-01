@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\PianoKeyPlay.cs" />
      <Compile Include="Assets\Scripts\SceneControl.cs" />
      <Compile Include="Assets\Scripts\SensorFusion.cs" />
+     <Compile Include="Assets\Scripts\SkyCtrl.cs" />
      <Compile Include="Assets\Scripts\StarCtrl.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
