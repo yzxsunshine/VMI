@@ -15,11 +15,12 @@ public class SensorFusion {
 	private Vector3 gyroOrientation;
 	private float timestamp = 0.0f;
 	private float FILTER_COEFFICIENT = 0.98f;
-
+#if !UNITY_EDITOR
 	private AndroidJavaClass cls_SensorFusion;
+#endif
 	// Use this for initialization
 	public void Start () {
-#if UNITY_ANDROID
+		#if !UNITY_EDITOR
 		AndroidJNI.AttachCurrentThread();
 		using (AndroidJavaClass cls_UnityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer")) {
 			using (AndroidJavaObject obj_Activity = cls_UnityPlayer.GetStatic<AndroidJavaObject>("currentActivity")) {
@@ -34,7 +35,7 @@ public class SensorFusion {
 
 	// Update is called once per frame
 	public void Update () {
-#if UNITY_ANDROID
+		#if !UNITY_EDITOR
 		cls_SensorFusion.CallStatic("fusion");
 		accel.x = cls_SensorFusion.CallStatic<float>("getAcclX");
 		accel.y = cls_SensorFusion.CallStatic<float>("getAcclY");
@@ -74,7 +75,7 @@ public class SensorFusion {
 	}
 
 	public void OnDestroy() {
-#if UNITY_ANDROID
+		#if !UNITY_EDITOR
 		cls_SensorFusion.Call("onDestroy");
 #endif
 	}

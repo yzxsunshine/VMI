@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\DrawBackground.cs" />
      <Compile Include="Assets\Scripts\KeyManage.cs" />
      <Compile Include="Assets\Scripts\KeyTouch.cs" />
      <Compile Include="Assets\Scripts\PianoKeyPlay.cs" />
@@ -53,6 +54,8 @@
      <Compile Include="Assets\Scripts\SensorFusion.cs" />
      <Compile Include="Assets\Scripts\SkyCtrl.cs" />
      <Compile Include="Assets\Scripts\StarCtrl.cs" />
+     <Compile Include="Assets\Scripts\VMIClient.cs" />
+     <Compile Include="Assets\Scripts\VMINetwork.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

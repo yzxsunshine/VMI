@@ -25,13 +25,11 @@ public class StarCtrl : MonoBehaviour {
 	Texture[] starTex;
 
 	public static Rect scenePanel;
-	public static string[] audioSources;
-	public static int[,] audioRange; 
-	public static int audioNum = 0;
+
 	// Use this for initialization
 	void Start () {
 		border = new Rect(0, 0, Screen.width, Screen.height);
-		status = STAR_STATUS.EDIT_IN_PANEL;
+		status = STAR_STATUS.EDIT_IN_SCENE;
 		starTex = new Texture[3];	// 0: single note; 1: selected single note; 2: past star; 3: future star; 
 		starTex[0] = Resources.Load("Textures/star", typeof(Texture)) as Texture;
 		starTex[1] = Resources.Load("Textures/star_selected", typeof(Texture)) as Texture;
@@ -119,7 +117,9 @@ public class StarCtrl : MonoBehaviour {
 				GameObject.Find("sky").GetComponent<SkyCtrl>().SendMessage("SetDraggingStatus", true);
 			}
 			else if(status == STAR_STATUS.EDIT_IN_PANEL) {
-				Instantiate(Resources.Load("Prefab/starGUI", typeof(GameObject)), this.transform.position, this.transform.rotation);
+				GameObject star = Instantiate(Resources.Load("Prefab/starGUI", typeof(GameObject)), this.transform.position, this.transform.rotation) as GameObject;
+				star.tag = "ctrl";
+				this.tag = "star";
 				status = STAR_STATUS.EDIT_DRAGGING;
 				GameObject.Find("sky").GetComponent<SkyCtrl>().SendMessage("SetDraggingStatus", true);
 			}
@@ -132,24 +132,10 @@ public class StarCtrl : MonoBehaviour {
 				position.x = Mathf.Clamp(position.x, border.x, border.x + border.width);
 				position.y = Mathf.Clamp(position.y, border.y, border.y + border.height);
 				
-				transform.position = position;
-				
 				lastMousePosition = GetClampedMousePosition();
 			}
 		}
 		Debug.Log(status.ToString());
-	}
-
-	public static void InitStatic() {
-		audioNum = 3;
-		audioSources = new string[audioNum];
-		audioSources[0] = "audio/c0";
-		audioSources[1] = "audio/c1";
-		audioSources[2] = "audio/c2";
-		audioRange = new int[audioNum, 2];	// include left, exclude right
-		audioRange[0, 0] = -8;	audioRange[0, 1] = 7;
-		audioRange[1, 0] = 7;	audioRange[1, 1] = 19;
-		audioRange[2, 0] = 19;	audioRange[2, 1] = 32;
 	}
 
 	public Vector3 GetScreenPosition() {
@@ -157,7 +143,7 @@ public class StarCtrl : MonoBehaviour {
 	}
 
 	public void SetPitch(int pitch, Vector3 targetPos) {
-		for (int i=0; i<audioNum; i++) {
+		/*for (int i=0; i<audioNum; i++) {
 			if(audioRange[i, 0] <= pitch && pitch < audioRange[i, 1]) {
 				pitch = pitch - i * 12;
 				audio.clip = Resources.Load(audioSources[i], typeof(AudioClip)) as AudioClip;
@@ -166,7 +152,7 @@ public class StarCtrl : MonoBehaviour {
 				audio.Play();
 				break;
 			}
-		}
+		}*/
 		targetPosition = targetPos;
 		autoMove = true;
 	}
