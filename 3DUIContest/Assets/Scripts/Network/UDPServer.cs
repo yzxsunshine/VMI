@@ -59,8 +59,11 @@ public class UDPServer
 	}
 
 	public string receiveString() {
-		byte[] rdata = server.Receive(ref receiver);
-		string msg = Encoding.ASCII.GetString(rdata);
+		string msg = "";
+		if(server.Available > 0) {
+			byte[] rdata = server.Receive(ref receiver);
+			msg = Encoding.ASCII.GetString(rdata);
+		}
 		return msg;
 	}
 

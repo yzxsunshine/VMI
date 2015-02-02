@@ -12,7 +12,21 @@ Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Manage
 Loading E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.061 seconds
+- Completed reload, in  0.048 seconds
 desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.261636 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 129.
+Total: 1.033836 ms (FindLiveObjects: 0.007129 ms CreateObjectMapping: 0.008369 ms MarkObjects: 0.088348 ms  DeleteObjects: 0.003719 ms)
+
+Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\System.Configuration.dll (this message is harmless)
+Platform assembly: E:\zyan\PaperProject\3DUI\VMI\VMI\3DUIContest\vmi_Data\Managed\System.Xml.dll (this message is harmless)
+Server started at port=12005
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+

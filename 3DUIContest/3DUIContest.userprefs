@@ -2,13 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ServerCtrl.cs">
     <Files>
-      <File FileName="Assets\Scripts\ServerCtrl.cs" Line="23" Column="25" />
+      <File FileName="Assets\Scripts\MobileCtrl.cs" Line="32" Column="62" />
+      <File FileName="Assets\Scripts\ServerCtrl.cs" Line="51" Column="7" />
       <File FileName="Assets\Scripts\LoadScene.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\UDPSend.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Network\UDPServer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\MobileCtrl.cs" Line="55" Column="22" />
-      <File FileName="Assets\Scripts\Network\MsgProcess.cs" Line="38" Column="42" />
-      <File FileName="Assets\Scripts\MusicClip.cs" Line="10" Column="21" />
+      <File FileName="Assets\Scripts\Network\MsgProcess.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MusicClip.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Network\PersistObj.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
